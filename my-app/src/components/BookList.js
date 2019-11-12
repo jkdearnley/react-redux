@@ -1,14 +1,14 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
-import selectBook from '../actions'
+import { selectBook } from '../actions'
 
 class BookList extends Component {
     renderList() {
-        return this.props.book.map((book) => {
+        return this.props.books.map((book) => {
             return (
                 <div className="item" key={book.title}>
                     <div className="right floated content">
-                        <button className="ui button primary" onClick={() => this.props.selectedBook(book)}>
+                        <button className="ui button primary" onClick={() => this.props.selectBook(book)}>
                             Details
                         </button>
                     </div>
