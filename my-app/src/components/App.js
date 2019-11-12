@@ -6,8 +6,12 @@ import BookNote from './BookNote'
 const App = () => {
     return (
         <div className="ui container grid">
-            <div className="ui grid"></div>
-            <div classsName=""></div>
+            <div className="ui grid">
+            <div classsName="column eight wide">
+                
+            </div>
+            </div>
+            
     
     </div>
     )
