@@ -1,4 +1,4 @@
-import { combinereducers } from 'redux'
+import { combineReducers } from 'redux'
 
 const booksReducer = () => {
     return [
@@ -16,7 +16,7 @@ const selectedBookReducer = (selectedBook =null, action) => {
     return selectedBook
 } 
 
-export default combinereducers ({
+export default combineReducers ({
     books: booksReducer,
     selectedBook: selectedBookReducer    
 })
